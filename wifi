@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "SSID: "
+read ssid
+echo "Password: "
+read password
+
+nmcli dev wifi connect $ssid password $password 

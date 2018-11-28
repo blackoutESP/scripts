@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read $1 2> /dev/null
+
+if [ $1 -eq "0" ]; then
+    
+    sudo synclient TouchpadOff=0
+
+elif [ $1 -eq "1" ]; then
+
+        sudo synclient TouchpadOff=1
+
+fi
+
+
